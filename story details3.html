@@ -1,0 +1,230 @@
+<iframe title="wireframe-5" srcdoc="&lt;html&gt;&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+    &lt;script&gt; window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+    &lt;style&gt;::-webkit-scrollbar { display: none;}&lt;/style&gt;
+    &lt;script&gt;tailwind.config = {
+  &quot;theme&quot;: {
+    &quot;extend&quot;: {
+      &quot;colors&quot;: {
+        &quot;primary&quot;: &quot;#4F46E5&quot;,
+        &quot;secondary&quot;: &quot;#38BDF8&quot;,
+        &quot;accent&quot;: &quot;#F97316&quot;,
+        &quot;light&quot;: &quot;#F3F4F6&quot;,
+        &quot;dark&quot;: &quot;#1F2937&quot;
+      },
+      &quot;fontFamily&quot;: {
+        &quot;cairo&quot;: [
+          &quot;Cairo&quot;,
+          &quot;sans-serif&quot;
+        ],
+        &quot;sans&quot;: [
+          &quot;Inter&quot;,
+          &quot;sans-serif&quot;
+        ]
+      }
+    }
+  }
+};&lt;/script&gt;
+    
+    &lt;title&gt;البحث عن السر العظيم ليونس - أثر الضوء&lt;/title&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin=&quot;&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;amp;display=swap&quot;&gt;&lt;style&gt;
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: &quot;Font Awesome 6 Free&quot;, &quot;Font Awesome 6 Brands&quot; !important;
+      }
+    &lt;/style&gt;&lt;style&gt;
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  &lt;/style&gt;&lt;/head&gt;
+&lt;body class=&quot;font-cairo bg-gray-50 text-right&quot; dir=&quot;rtl&quot;&gt;
+    
+    &lt;!-- Header --&gt;
+    &lt;header id=&quot;header&quot; class=&quot;bg-white shadow-lg sticky top-0 z-50&quot;&gt;
+        &lt;div class=&quot;container mx-auto px-4 py-4&quot;&gt;
+            &lt;div class=&quot;flex items-center justify-between&quot;&gt;
+                &lt;div class=&quot;flex items-center&quot;&gt;
+                    &lt;div class=&quot;text-3xl font-bold text-primary flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-book-open text-accent mr-3&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;أثر الضوء&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;nav class=&quot;hidden md:flex items-center space-x-2 space-x-reverse&quot;&gt;
+                    &lt;span class=&quot;px-4 py-2 text-gray-700 font-medium rounded-lg hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;الرئيسية&lt;/span&gt;
+                    &lt;span class=&quot;px-4 py-2 text-primary font-medium rounded-lg bg-primary/10 cursor-pointer&quot;&gt;القصص&lt;/span&gt;
+                    &lt;span class=&quot;px-4 py-2 text-gray-700 font-medium rounded-lg hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;أدوات تفاعلية&lt;/span&gt;
+                    &lt;span class=&quot;px-4 py-2 text-gray-700 font-medium rounded-lg hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;عن الكاتب&lt;/span&gt;
+                    &lt;span class=&quot;px-4 py-2 text-gray-700 font-medium rounded-lg hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;الأسئلة الشائعة&lt;/span&gt;
+                    &lt;span class=&quot;px-4 py-2 text-gray-700 font-medium rounded-lg hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;تواصل معنا&lt;/span&gt;
+                &lt;/nav&gt;
+                
+                &lt;div class=&quot;flex items-center&quot;&gt;
+                    &lt;button class=&quot;bg-accent text-white px-6 py-2 rounded-lg font-medium hover:bg-accent/90 transition duration-300 hidden md:block&quot;&gt;اشترك الآن&lt;/button&gt;
+                    &lt;button class=&quot;md:hidden text-gray-700 focus:outline-none&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-bars text-xl&quot;&gt;&lt;/i&gt;
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    
+    &lt;!-- Breadcrumb --&gt;
+    &lt;div id=&quot;breadcrumb&quot; class=&quot;bg-gradient-to-r from-primary/5 to-secondary/5 py-4&quot;&gt;
+        &lt;div class=&quot;container mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;flex items-center text-sm text-gray-600&quot;&gt;
+                &lt;span class=&quot;hover:text-primary cursor-pointer transition duration-200&quot;&gt;الرئيسية&lt;/span&gt;
+                &lt;i class=&quot;fa-solid fa-chevron-left mx-3 text-xs&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;hover:text-primary cursor-pointer transition duration-200&quot;&gt;القصص&lt;/span&gt;
+                &lt;i class=&quot;fa-solid fa-chevron-left mx-3 text-xs&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;text-gray-900 font-medium&quot;&gt;البحث عن السر العظيم ليونس&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Story Hero Section --&gt;
+    &lt;section id=&quot;story-hero&quot; class=&quot;py-16 bg-gradient-to-br from-blue-50 via-white to-purple-50&quot;&gt;
+        &lt;div class=&quot;container mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-2 gap-16 items-center&quot;&gt;
+                &lt;div class=&quot;order-2 lg:order-1&quot;&gt;
+                    &lt;div class=&quot;flex items-center mb-6&quot;&gt;
+                        &lt;span class=&quot;bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-bold ml-4 shadow-lg&quot;&gt;قصة مجانية&lt;/span&gt;
+                        &lt;div class=&quot;flex items-center bg-white rounded-full px-3 py-1 shadow-md&quot;&gt;
+                            &lt;div class=&quot;flex text-yellow-500&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt;
+                                &lt;i class=&quot;fa-solid fa-star&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;span class=&quot;text-gray-700 mr-2 font-medium&quot;&gt;(4.8)&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;h1 class=&quot;text-5xl font-bold text-gray-900 mb-6 leading-tight&quot;&gt;البحث عن السر العظيم ليونس&lt;/h1&gt;
+                    &lt;p class=&quot;text-xl text-gray-700 mb-8 leading-relaxed&quot;&gt;رحلة يونس مع العم سالم في البحث عن معنى النجاح الحقيقي، وكيف يحقق التوازن بين الجسد والعقل والروح. قصة تعلم الأطفال قيمة التوازن في الحياة وأهمية طرح الأسئلة الصحيحة.&lt;/p&gt;
+                    
+                    &lt;div class=&quot;flex flex-wrap gap-3 mb-10&quot;&gt;
+                        &lt;span class=&quot;px-4 py-2 bg-gradient-to-r from-primary/20 to-primary/10 text-primary rounded-full text-sm font-bold border border-primary/20&quot;&gt;التوازن&lt;/span&gt;
+                        &lt;span class=&quot;px-4 py-2 bg-gradient-to-r from-accent/20 to-accent/10 text-accent rounded-full text-sm font-bold border border-accent/20&quot;&gt;التفكير النقدي&lt;/span&gt;
+                        &lt;span class=&quot;px-4 py-2 bg-gradient-to-r from-secondary/20 to-secondary/10 text-secondary rounded-full text-sm font-bold border border-secondary/20&quot;&gt;النمو الشخصي&lt;/span&gt;
+                        &lt;span class=&quot;px-4 py-2 bg-gradient-to-r from-green-200 to-green-100 text-green-800 rounded-full text-sm font-bold border border-green-200&quot;&gt;الحكمة&lt;/span&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;flex flex-col sm:flex-row gap-4&quot;&gt;
+                        &lt;button class=&quot;bg-gradient-to-r from-primary to-primary/90 text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transform hover:-translate-y-1 transition duration-300 flex items-center justify-center text-lg&quot;&gt;
+                            &lt;i class=&quot;fa-solid fa-book-open ml-3&quot;&gt;&lt;/i&gt;
+                            اقرأ القصة الآن
+                        &lt;/button&gt;
+                        &lt;button class=&quot;bg-gradient-to-r from-accent to-orange-500 text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transform hover:-translate-y-1 transition duration-300 flex items-center justify-center text-lg&quot;&gt;
+                            &lt;i class=&quot;fa-brands fa-amazon ml-3&quot;&gt;&lt;/i&gt;
+                            اشترِ من أمازون
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;order-1 lg:order-2&quot;&gt;
+                    &lt;div class=&quot;relative&quot;&gt;
+                        &lt;div class=&quot;absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-2xl transform rotate-3&quot;&gt;&lt;/div&gt;
+                        &lt;img class=&quot;relative w-full h-[600px] object-cover rounded-2xl shadow-2xl&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/b1c02244fb-f27c4258ddd26255a614.png&quot; alt=&quot;young Arab boy on magical journey with wise elderly man, beautiful Middle Eastern landscape, children&quot;&gt;
+                        &lt;div class=&quot;absolute top-6 right-6 bg-white/95 backdrop-blur-sm rounded-xl p-4 shadow-lg&quot;&gt;
+                            &lt;div class=&quot;flex items-center&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-clock text-primary ml-3 text-lg&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;text-sm font-bold text-gray-800&quot;&gt;20 دقيقة قراءة&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;div class=&quot;absolute bottom-6 left-6 bg-gradient-to-r from-accent to-orange-500 text-white rounded-xl p-4 shadow-lg&quot;&gt;
+                            &lt;div class=&quot;flex items-center&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-users ml-3 text-lg&quot;&gt;&lt;/i&gt;
+                                &lt;span class=&quot;text-sm font-bold&quot;&gt;للأعمار 12-15&lt;/span&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Story Stats --&gt;
+    &lt;section id=&quot;story-stats&quot; class=&quot;py-12 bg-white&quot;&gt;
+        &lt;div class=&quot;container mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;grid grid-cols-1 md:grid-cols-4 gap-8&quot;&gt;
+                &lt;div class=&quot;text-center p-6 rounded-xl bg-gradient-to-br from-primary/10 to-primary/5&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-eye text-3xl text-primary mb-3&quot;&gt;&lt;/i&gt;
+                    &lt;div class=&quot;text-2xl font-bold text-gray-900&quot;&gt;12,547&lt;/div&gt;
+                    &lt;div class=&quot;text-sm text-gray-600&quot;&gt;قارئ&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;text-center p-6 rounded-xl bg-gradient-to-br from-accent/10 to-accent/5&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-download text-3xl text-accent mb-3&quot;&gt;&lt;/i&gt;
+                    &lt;div class=&quot;text-2xl font-bold text-gray-900&quot;&gt;8,932&lt;/div&gt;
+                    &lt;div class=&quot;text-sm text-gray-600&quot;&gt;تحميل أدوات&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;text-center p-6 rounded-xl bg-gradient-to-br from-secondary/10 to-secondary/5&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-comments text-3xl text-secondary mb-3&quot;&gt;&lt;/i&gt;
+                    &lt;div class=&quot;text-2xl font-bold text-gray-900&quot;&gt;2,156&lt;/div&gt;
+                    &lt;div class=&quot;text-sm text-gray-600&quot;&gt;تعليق&lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;text-center p-6 rounded-xl bg-gradient-to-br from-green-100 to-green-50&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-share text-3xl text-green-600 mb-3&quot;&gt;&lt;/i&gt;
+                    &lt;div class=&quot;text-2xl font-bold text-gray-900&quot;&gt;4,721&lt;/div&gt;
+                    &lt;div class=&quot;text-sm text-gray-600&quot;&gt;مشاركة&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Audio Section --&gt;
+    &lt;section id=&quot;audio-section&quot; class=&quot;py-16 bg-gradient-to-br from-green-50 to-emerald-50&quot;&gt;
+        &lt;div class=&quot;container mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-5xl mx-auto&quot;&gt;
+                &lt;div class=&quot;bg-white rounded-2xl shadow-xl overflow-hidden&quot;&gt;
+                    &lt;div class=&quot;bg-gradient-to-r from-green-600 to-emerald-600 p-8 text-white text-center&quot;&gt;
+                        &lt;h2 class=&quot;text-4xl font-bold mb-4&quot;&gt;استمع إلى القصة&lt;/h2&gt;
+                        &lt;p class=&quot;text-xl opacity-90&quot;&gt;استمتع بسماع القصة كاملة مع التأثيرات الصوتية الجميلة&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;p-8&quot;&gt;
+                        &lt;div class=&quot;bg-gradient-to-r from-green-50 to-green-100 rounded-2xl p-8 text-center&quot;&gt;
+                            &lt;div class=&quot;flex items-center justify-center mb-6&quot;&gt;
+                                &lt;i class=&quot;fa-brands fa-spotify text-6xl text-green-600&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;h3 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;متاح مجانًا على Spotify&lt;/h3&gt;
+                            &lt;p class=&quot;text-lg text-gray-700 mb-6&quot;&gt;استمع إلى القصة الكاملة بصوت راوٍ محترف مع موسيقى تصويرية جميلة&lt;/p&gt;
+                            &lt;button class=&quot;bg-gradient-to-r from-green-600 to-green-700 text-white px-8 py-4 rounded-xl font-bold hover:shadow-xl transform hover:-translate-y-1 transition duration-300 inline-flex items-center text-lg&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-play ml-3&quot;&gt;&lt;/i&gt;
+                                استمع الآن على Spotify
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Tools Section --&gt;
+    
+
+
+    &lt;/body&gt;&lt;/html&gt;" frameborder="0" class="overflow-hidden" style="height: 1738px; width: 100%; overflow: hidden; z-index: 10; transform: translateZ(0px); contain: layout style paint;"></iframe>

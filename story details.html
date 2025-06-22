@@ -1,0 +1,358 @@
+<iframe title="wireframe-2" srcdoc="&lt;html&gt;&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;script src=&quot;https://cdn.tailwindcss.com&quot;&gt;&lt;/script&gt;
+    &lt;script&gt; window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js&quot; crossorigin=&quot;anonymous&quot; referrerpolicy=&quot;no-referrer&quot;&gt;&lt;/script&gt;
+    &lt;style&gt;::-webkit-scrollbar { display: none;}&lt;/style&gt;
+    &lt;script&gt;tailwind.config = {
+  &quot;theme&quot;: {
+    &quot;extend&quot;: {
+      &quot;colors&quot;: {
+        &quot;primary&quot;: &quot;#4F46E5&quot;,
+        &quot;secondary&quot;: &quot;#38BDF8&quot;,
+        &quot;accent&quot;: &quot;#F97316&quot;,
+        &quot;light&quot;: &quot;#F3F4F6&quot;,
+        &quot;dark&quot;: &quot;#1F2937&quot;
+      },
+      &quot;fontFamily&quot;: {
+        &quot;cairo&quot;: [
+          &quot;Cairo&quot;,
+          &quot;sans-serif&quot;
+        ],
+        &quot;sans&quot;: [
+          &quot;Inter&quot;,
+          &quot;sans-serif&quot;
+        ]
+      }
+    }
+  }
+};&lt;/script&gt;
+    
+    &lt;title&gt;البحث عن السر العظيم ليونس - أثر الضوء&lt;/title&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;&gt;&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin=&quot;&quot;&gt;&lt;link rel=&quot;stylesheet&quot; href=&quot;https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&amp;amp;display=swap&quot;&gt;&lt;style&gt;
+      body {
+        font-family: 'Inter', sans-serif !important;
+      }
+      
+      /* Preserve Font Awesome icons */
+      .fa, .fas, .far, .fal, .fab {
+        font-family: &quot;Font Awesome 6 Free&quot;, &quot;Font Awesome 6 Brands&quot; !important;
+      }
+    &lt;/style&gt;&lt;style&gt;
+  .highlighted-section {
+    outline: 2px solid #3F20FB;
+    background-color: rgba(63, 32, 251, 0.1);
+  }
+
+  .edit-button {
+    position: absolute;
+    z-index: 1000;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html, body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  &lt;/style&gt;&lt;/head&gt;
+&lt;body class=&quot;font-cairo bg-white text-right&quot; dir=&quot;rtl&quot;&gt;
+    
+    &lt;!-- Header --&gt;
+    &lt;header id=&quot;header&quot; class=&quot;bg-white shadow-sm sticky top-0 z-50&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4 py-4&quot;&gt;
+            &lt;div class=&quot;flex items-center justify-between&quot;&gt;
+                &lt;div class=&quot;flex items-center&quot;&gt;
+                    &lt;div class=&quot;text-2xl font-bold text-primary flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-book-open text-accent mr-2&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;أثر الضوء&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;nav class=&quot;hidden md:flex items-center space-x-6 space-x-reverse&quot;&gt;
+                    &lt;span class=&quot;px-3 py-2 text-primary font-medium rounded-md bg-primary/10 cursor-pointer&quot;&gt;مكتبة القصص&lt;/span&gt;
+                    &lt;span class=&quot;px-3 py-2 text-gray-700 font-medium rounded-md hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;الرئيسية&lt;/span&gt;
+                    &lt;span class=&quot;px-3 py-2 text-gray-700 font-medium rounded-md hover:bg-primary hover:text-white transition duration-300 cursor-pointer&quot;&gt;تسجيل الدخول&lt;/span&gt;
+                &lt;/nav&gt;
+                
+                &lt;button class=&quot;md:hidden text-gray-700 focus:outline-none&quot;&gt;
+                    &lt;i class=&quot;fa-solid fa-bars text-xl&quot;&gt;&lt;/i&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    
+    &lt;!-- Breadcrumb --&gt;
+    &lt;div id=&quot;breadcrumb&quot; class=&quot;bg-gray-50 py-3&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;flex items-center text-sm text-gray-600&quot;&gt;
+                &lt;span class=&quot;hover:text-primary cursor-pointer&quot;&gt;مكتبة القصص&lt;/span&gt;
+                &lt;i class=&quot;fa-solid fa-chevron-left mx-2 text-xs&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;text-gray-900&quot;&gt;تفاصيل القصة&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;!-- Story Header --&gt;
+    &lt;section id=&quot;story-header&quot; class=&quot;py-12 bg-gradient-to-br from-blue-50 to-purple-50&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-4xl mx-auto&quot;&gt;
+                &lt;div class=&quot;bg-white rounded-2xl shadow-lg overflow-hidden&quot;&gt;
+                    &lt;img class=&quot;w-full h-80 object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/6758d7c418-dafdb543e5dfaf8bfbfe.png&quot; alt=&quot;colorful children&quot;&gt;
+                    
+                    &lt;div class=&quot;p-8&quot;&gt;
+                        &lt;h1 class=&quot;text-3xl font-bold text-gray-900 mb-3&quot;&gt;البحث عن السر العظيم ليونس&lt;/h1&gt;
+                        &lt;h2 class=&quot;text-xl text-gray-700 mb-4&quot;&gt;رحلة يونس مع العم سالم - قيمة التوازن&lt;/h2&gt;
+                        &lt;p class=&quot;text-gray-600 mb-6 leading-relaxed&quot;&gt;اكتشف مع يونس معنى النجاح الحقيقي في رحلة مليئة بالحكمة والتأمل. قصة تعلم الأطفال كيفية تحقيق التوازن بين الجسد والعقل والروح من خلال مغامرة شيقة مع العم سالم الحكيم.&lt;/p&gt;
+                        
+                        &lt;div class=&quot;flex justify-center&quot;&gt;
+                            &lt;button class=&quot;bg-primary text-white px-8 py-3 rounded-lg font-bold hover:bg-primary/90 transition duration-300 inline-flex items-center text-lg&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-shopping-cart ml-2&quot;&gt;&lt;/i&gt;
+                                اشترِ القصة من أمازون
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Audio Preview --&gt;
+    &lt;section id=&quot;audio-preview&quot; class=&quot;py-16 bg-white&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-3xl mx-auto text-center&quot;&gt;
+                &lt;h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;استمع إلى معاينة من القصة&lt;/h2&gt;
+                
+                &lt;div class=&quot;bg-gradient-to-r from-green-50 to-green-100 rounded-xl p-8&quot;&gt;
+                    &lt;div class=&quot;flex items-center justify-center mb-6&quot;&gt;
+                        &lt;div class=&quot;w-20 h-20 bg-green-600 rounded-full flex items-center justify-center&quot;&gt;
+                            &lt;i class=&quot;fa-solid fa-play text-white text-2xl&quot;&gt;&lt;/i&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;h3 class=&quot;text-xl font-bold text-gray-900 mb-2&quot;&gt;البحث عن السر العظيم ليونس&lt;/h3&gt;
+                    &lt;p class=&quot;text-gray-700 mb-6&quot;&gt;استمع إلى مقتطف من القصة بصوت راوٍ محترف&lt;/p&gt;
+                    
+                    &lt;button class=&quot;bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition duration-300 inline-flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-brands fa-spotify ml-2&quot;&gt;&lt;/i&gt;
+                        استمع على Spotify
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Practical Tool --&gt;
+    &lt;section id=&quot;practical-tool&quot; class=&quot;py-16 bg-gray-50&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-5xl mx-auto&quot;&gt;
+                &lt;div class=&quot;text-center mb-12&quot;&gt;
+                    &lt;h2 class=&quot;text-3xl font-bold text-gray-900 mb-4&quot;&gt;الأدوات العملية للقصة&lt;/h2&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;grid grid-cols-1 lg:grid-cols-2 gap-12 items-center&quot;&gt;
+                    &lt;div&gt;
+                        &lt;img class=&quot;w-full h-80 object-cover rounded-xl shadow-lg&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/b376755295-8cb4fbc36a3617b91256.png&quot; alt=&quot;colorful daily balance tracking sheet for children, Arabic text, organized layout with icons&quot;&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div&gt;
+                        &lt;h3 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;جدول التوازن اليومي&lt;/h3&gt;
+                        &lt;p class=&quot;text-gray-700 mb-6 leading-relaxed&quot;&gt;أداة عملية تساعد طفلك على تطبيق ما تعلمه من القصة في حياته اليومية. يتضمن الجدول أنشطة متوازنة للجسد والعقل والروح مع مساحات للتقييم الذاتي.&lt;/p&gt;
+                        
+                        &lt;button class=&quot;bg-primary text-white px-6 py-3 rounded-lg font-bold hover:bg-primary/90 transition duration-300 inline-flex items-center&quot;&gt;
+                            &lt;i class=&quot;fa-solid fa-download ml-2&quot;&gt;&lt;/i&gt;
+                            تحميل PDF مجانًا
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Discussion Guide --&gt;
+    &lt;section id=&quot;discussion-guide&quot; class=&quot;py-16 bg-white&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-4xl mx-auto&quot;&gt;
+                &lt;div class=&quot;text-center mb-12&quot;&gt;
+                    &lt;h2 class=&quot;text-3xl font-bold text-gray-900 mb-4&quot;&gt;دليل الحوار الأسري والصفي&lt;/h2&gt;
+                    &lt;p class=&quot;text-lg text-gray-700&quot;&gt;أسئلة محفزة للتفكير لإجراء حوارات هادفة مع الأطفال&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-8&quot;&gt;
+                    &lt;div class=&quot;space-y-6&quot;&gt;
+                        &lt;div class=&quot;flex items-start&quot;&gt;
+                            &lt;div class=&quot;w-8 h-8 bg-primary rounded-full flex items-center justify-center ml-4 flex-shrink-0 mt-1&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-question text-white text-sm&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                                &lt;h4 class=&quot;font-bold text-gray-900 mb-2&quot;&gt;ما رأيك في تعريف العم سالم للنجاح؟&lt;/h4&gt;
+                                &lt;p class=&quot;text-gray-700 text-sm&quot;&gt;يساعد هذا السؤال الطفل على التفكير في مفهوم النجاح الحقيقي&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class=&quot;flex items-start&quot;&gt;
+                            &lt;div class=&quot;w-8 h-8 bg-accent rounded-full flex items-center justify-center ml-4 flex-shrink-0 mt-1&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-question text-white text-sm&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                                &lt;h4 class=&quot;font-bold text-gray-900 mb-2&quot;&gt;كيف يمكنك تطبيق التوازن في حياتك اليومية؟&lt;/h4&gt;
+                                &lt;p class=&quot;text-gray-700 text-sm&quot;&gt;سؤال عملي يربط القصة بالواقع المعيش للطفل&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        
+                        &lt;div class=&quot;flex items-start&quot;&gt;
+                            &lt;div class=&quot;w-8 h-8 bg-secondary rounded-full flex items-center justify-center ml-4 flex-shrink-0 mt-1&quot;&gt;
+                                &lt;i class=&quot;fa-solid fa-question text-white text-sm&quot;&gt;&lt;/i&gt;
+                            &lt;/div&gt;
+                            &lt;div&gt;
+                                &lt;h4 class=&quot;font-bold text-gray-900 mb-2&quot;&gt;ما الدروس التي تعلمتها من رحلة يونس؟&lt;/h4&gt;
+                                &lt;p class=&quot;text-gray-700 text-sm&quot;&gt;يشجع على التأمل واستخلاص العبر الشخصية&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                
+                &lt;div class=&quot;text-center&quot;&gt;
+                    &lt;button class=&quot;bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition duration-300 inline-flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-download ml-2&quot;&gt;&lt;/i&gt;
+                        تحميل الدليل الكامل
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Share Experience --&gt;
+    &lt;section id=&quot;share-experience&quot; class=&quot;py-16 bg-gradient-to-br from-purple-50 to-pink-50&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-4xl mx-auto text-center&quot;&gt;
+                &lt;h2 class=&quot;text-3xl font-bold text-gray-900 mb-4&quot;&gt;شارك تجربتك مع القصة&lt;/h2&gt;
+                &lt;p class=&quot;text-lg text-gray-700 mb-8&quot;&gt;ارسم مشهدًا من القصة أو شاركنا أفكارك وتطبيقك لجدول التوازن&lt;/p&gt;
+                
+                &lt;div class=&quot;bg-white rounded-xl shadow-lg p-8 mb-8&quot;&gt;
+                    &lt;div class=&quot;flex flex-wrap justify-center gap-3 mb-6&quot;&gt;
+                        &lt;span class=&quot;bg-blue-100 text-blue-800 px-4 py-2 rounded-full font-medium&quot;&gt;#قصتي_مع_يونس&lt;/span&gt;
+                        &lt;span class=&quot;bg-purple-100 text-purple-800 px-4 py-2 rounded-full font-medium&quot;&gt;#أثر_الضوء&lt;/span&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;flex flex-wrap justify-center gap-4 mb-6&quot;&gt;
+                        &lt;button class=&quot;bg-pink-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-pink-700 transition duration-300 inline-flex items-center&quot;&gt;
+                            &lt;i class=&quot;fa-brands fa-instagram ml-2&quot;&gt;&lt;/i&gt;
+                            شارك على انستغرام
+                        &lt;/button&gt;
+                        &lt;button class=&quot;bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition duration-300 inline-flex items-center&quot;&gt;
+                            &lt;i class=&quot;fa-brands fa-facebook ml-2&quot;&gt;&lt;/i&gt;
+                            شارك على فيسبوك
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;button class=&quot;bg-accent text-white px-6 py-3 rounded-lg font-bold hover:bg-accent/90 transition duration-300 inline-flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-eye ml-2&quot;&gt;&lt;/i&gt;
+                        شاهد مشاركات القراء
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Related Stories --&gt;
+    &lt;section id=&quot;related-stories&quot; class=&quot;py-16 bg-white&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-5xl mx-auto&quot;&gt;
+                &lt;h2 class=&quot;text-3xl font-bold text-gray-900 text-center mb-12&quot;&gt;قصص مشابهة&lt;/h2&gt;
+                
+                &lt;div class=&quot;grid grid-cols-1 md:grid-cols-2 gap-8&quot;&gt;
+                    &lt;div class=&quot;bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300&quot;&gt;
+                        &lt;img class=&quot;w-full h-48 object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/c8369c86b8-b5d6ec339273e63e8cf1.png&quot; alt=&quot;children&quot;&gt;
+                        &lt;div class=&quot;p-6&quot;&gt;
+                            &lt;h3 class=&quot;text-xl font-bold text-gray-900 mb-2&quot;&gt;رحلة نور في عالم المشاعر&lt;/h3&gt;
+                            &lt;p class=&quot;text-gray-600 mb-4&quot;&gt;اكتشف مع نور كيفية فهم المشاعر والتعامل معها بحكمة&lt;/p&gt;
+                            &lt;button class=&quot;bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition duration-300&quot;&gt;
+                                اقرأ القصة
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;div class=&quot;bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition duration-300&quot;&gt;
+                        &lt;img class=&quot;w-full h-48 object-cover&quot; src=&quot;https://storage.googleapis.com/uxpilot-auth.appspot.com/c8369c86b8-37d4114ece2faea8fe9b.png&quot; alt=&quot;children&quot;&gt;
+                        &lt;div class=&quot;p-6&quot;&gt;
+                            &lt;h3 class=&quot;text-xl font-bold text-gray-900 mb-2&quot;&gt;أسرار الوقت مع مروان&lt;/h3&gt;
+                            &lt;p class=&quot;text-gray-600 mb-4&quot;&gt;تعلم مع مروان فن إدارة الوقت وتنظيم الأولويات&lt;/p&gt;
+                            &lt;button class=&quot;bg-primary text-white px-4 py-2 rounded-lg font-medium hover:bg-primary/90 transition duration-300&quot;&gt;
+                                اقرأ القصة
+                            &lt;/button&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Quick Support --&gt;
+    &lt;section id=&quot;quick-support&quot; class=&quot;py-12 bg-gray-50&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;max-w-3xl mx-auto text-center&quot;&gt;
+                &lt;div class=&quot;bg-white rounded-xl shadow-lg p-8&quot;&gt;
+                    &lt;h2 class=&quot;text-2xl font-bold text-gray-900 mb-4&quot;&gt;هل تحتاج مساعدة؟&lt;/h2&gt;
+                    &lt;p class=&quot;text-gray-700 mb-6&quot;&gt;فريقنا مستعد لمساعدتك في أي استفسار حول القصص أو الأدوات التفاعلية&lt;/p&gt;
+                    
+                    &lt;button class=&quot;bg-accent text-white px-6 py-3 rounded-lg font-bold hover:bg-accent/90 transition duration-300 inline-flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-headset ml-2&quot;&gt;&lt;/i&gt;
+                        تواصل معنا
+                    &lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    
+    &lt;!-- Footer --&gt;
+    &lt;footer id=&quot;footer&quot; class=&quot;bg-gray-900 text-white py-12&quot;&gt;
+        &lt;div class=&quot;max-w-7xl mx-auto px-4&quot;&gt;
+            &lt;div class=&quot;grid grid-cols-1 md:grid-cols-4 gap-8&quot;&gt;
+                &lt;div&gt;
+                    &lt;div class=&quot;text-2xl font-bold text-accent mb-4 flex items-center&quot;&gt;
+                        &lt;i class=&quot;fa-solid fa-book-open ml-2&quot;&gt;&lt;/i&gt;
+                        &lt;span&gt;أثر الضوء&lt;/span&gt;
+                    &lt;/div&gt;
+                    &lt;p class=&quot;text-gray-400&quot;&gt;مجموعة قصصية تربوية تفاعلية للأطفال والمربين&lt;/p&gt;
+                &lt;/div&gt;
+                
+                &lt;div&gt;
+                    &lt;h3 class=&quot;font-bold mb-4&quot;&gt;روابط سريعة&lt;/h3&gt;
+                    &lt;ul class=&quot;space-y-2 text-gray-400&quot;&gt;
+                        &lt;li&gt;&lt;span class=&quot;hover:text-white cursor-pointer&quot;&gt;عن المجموعة&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span class=&quot;hover:text-white cursor-pointer&quot;&gt;تواصل معنا&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span class=&quot;hover:text-white cursor-pointer&quot;&gt;الأسئلة الشائعة&lt;/span&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                
+                &lt;div&gt;
+                    &lt;h3 class=&quot;font-bold mb-4&quot;&gt;القصص&lt;/h3&gt;
+                    &lt;ul class=&quot;space-y-2 text-gray-400&quot;&gt;
+                        &lt;li&gt;&lt;span class=&quot;hover:text-white cursor-pointer&quot;&gt;القصص المجانية&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span class=&quot;hover:text-white cursor-pointer&quot;&gt;القصص المدفوعة&lt;/span&gt;&lt;/li&gt;
+                        &lt;li&gt;&lt;span class=&quot;hover:text-white cursor-pointer&quot;&gt;الأدوات التفاعلية&lt;/span&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                
+                &lt;div&gt;
+                    &lt;h3 class=&quot;font-bold mb-4&quot;&gt;تابعنا&lt;/h3&gt;
+                    &lt;div class=&quot;flex space-x-4 space-x-reverse&quot;&gt;
+                        &lt;i class=&quot;fa-brands fa-instagram text-2xl hover:text-accent cursor-pointer&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;fa-brands fa-facebook text-2xl hover:text-accent cursor-pointer&quot;&gt;&lt;/i&gt;
+                        &lt;i class=&quot;fa-brands fa-youtube text-2xl hover:text-accent cursor-pointer&quot;&gt;&lt;/i&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            
+            &lt;div class=&quot;border-t border-gray-800 mt-8 pt-8 text-center text-gray-400&quot;&gt;
+                &lt;p&gt;© 2024 أثر الضوء. جميع الحقوق محفوظة.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    
+
+&lt;/body&gt;&lt;/html&gt;" frameborder="0" class="overflow-hidden" style="height: 4138px; width: 100%; overflow: hidden; z-index: 10; transform: translateZ(0px); contain: layout style paint;"></iframe>
